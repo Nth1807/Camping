@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.clear{
+    clear: both;
+}
+/* Header */
+.header{
+    background-color: #F8E1DB;
+    /* padding dùng để đẩy nọi dung vào trong 
+    một khoảng so với đường viền của nó */
+    /* Padding có 4 hướng  */
+    /* khi viết nhận 1 giá trị thì sẽ padding cả 4 hướng  */
+    
+    /* khi viết padding nhận 2 giá trị thì phần tử đó
+    trên dưới nhận giá trị đầu tiên 
+    và trái phải nhận giá trị thứ 2 */
+
+    /* khi viết padding nhận 4 giá trị thì phần tự đó sẽ padding theo 
+    kim đồng hồ ( top 1 -> right 2-> bottom 3-> left 4) */
+    padding: 10px 60px
+  
+}   
+
+.header .header__nav li{
+    display: inline;
+    margin-right: 30px ;
+}
+.header .header__nav li a{
+    /* thẻ a có màu của riêng nó, muốn chỉnh thì gọi thẳng
+    vô thẻ a */
+    color: black;
+
+    /* text-decoration: line-through ( để gạch ngang trong text) */
+    /* text-decoratio: để xóa bỏ gạch chân */
+   text-decoration: none;
+    
+}
+
+.header .header__logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Banner */
+.banner {
+    /* background-image: tạo hình nền cho phần tử đó */
+    background-image: url(../img/BG.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* thuộc tính giúp hình không bị lặp đi lặp lại */ 
+
+}
+
+/* Explore */
+
+.explore {  
+    padding: 60px 0;
+}
+.explore__titile{
+    text-align: center;
+    color: #8D8D8D;
+    
+}
+
+.explore .explore__content .explore__content__item{
+   float: left;
+   width: 25%;
+   padding: 0 10px;
+}
+
+.explore .explore__content .item__bg {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.explore .explore__content .item__bg .item__img img{
+    border-radius: 20px;
+}
+
+.explore .explore__content .item__bg h3{
+    margin: 15px;
+    font-size: 20px;
+}
+
+
+.explore .explore__content .item__bg p{
+    color: #8D8D8D;
+    margin-bottom: 15px;
+}
+
+.explore .explore__content .item__bg button{
+    background-color: #c4c4c4;
+    border-radius: 20px;
+    padding: 15px 40px;
+    border: none;
+}
+
+.explore .explore__content .item__bg .item__img{
+    position: relative;
+}
+
+.explore .explore__content .item__bg .item__img i{
+    color: rgb(223, 61, 88);
+}
+
+.explore .explore__content .item__bg .item__img .square{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    line-height: 40px;
+    border-radius: 12px;
+    /* opacity giá trị từ 0 đến 1 : vd: 0.1 , 0.5 */
+    opacity: 0.8;
+}
+
+.explore .explore__view__button{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.explore .explore__view__button button{
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ff6363;
+    padding: 15px 40px;
+    color: #ff6363;
+    background-color:unset;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+
+.contact{
+    background-color:#F8E1DB;
+}
+.contact .container__contact img{
+    position: absolute;
+    position: 
+}
+.contact .container__contact .home img{
+    padding-top: 20px;
+    position: relative;
+}
+
+.contact .container__contact {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact .container__contact .touch .touch__container {
+    padding-left: 170px;
+}
+
+
+.contact .container__contact .touch .touch__container .stayintouch{
+   position: relative;
+    padding-top: 70px;
+    font-size: 30px;
+    
+}
+
+.contact .container__contact .touch .touch__container .stayintouch h3{
+    color: #777777;
+
+}
+.contact .container__contact .touch .touch__container .stayintouch p{
+    color: #aaaaaa;
+    font-size: 15px;
+}
+.contact .container__contact .touch .touch__container .download__us{
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+}
+.contact .container__contact .touch .touch__container .download__us h6{
+    color: #777777;
+    font-size: 20px;
+}
+.contact .container__contact .touch .touch__container .download__us .app{
+    margin-right: 15px;
+    
+}
+.contact .container__contact .touch .touch__container .download__us .app img{
+    margin-top: 40px;
+}
+.contact .container__contact .touch .touch__container .download__us .icon i{
+    width: 40px;
+    margin-top: 40px;
+    color: #ff6363;
+}
+
+.footer{
+    border-radius: 50px 50px 0 0;
+  margin-top: 100px;
+  background-color: #F8E1DB;   
+}
+
+.footer .footer_container{
+    display: flex;
+    width: 100%;
+}
+.footer .footer_container li{
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #646464;
+}
+.footer .footer_container h3 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    
+}
+.footer .footer_container .hip_camp{
+    width: 40%;
+}
+.footer .footer_container .hip_camp p{
+    font-size: 15px;
+    color: #646464;
+}
+
+.footer .footer_container .help_you{
+    width: 20%;
+}
+.footer .footer_container .with_us{
+    width: 20%;
+}
+.footer .footer_container .let_us{
+    width: 20%;
+}
+.footer .icon_footer  {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+.footer .icon_footer .icon_c{
+    margin-right: 5px;
+}
+
+
+
